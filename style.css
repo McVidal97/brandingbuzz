@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 :root{
     --primarColor:#022657;
@@ -47,7 +47,7 @@ body{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     /* float: right; */
-    margin-left: 200%;
+    margin-left: 57rem;
     /* width: 30vw;
     height: 7vh; */
     transition: all 2s 2s;
@@ -192,10 +192,6 @@ h1{
     bottom: -200px;
 }
 #penn1{
-    /* background-image: url(./image/Israel.jpg);
-    background-position: bottom 0.5px right 1px;
-    background-size: cover;
-    background-repeat: no-repeat; */
     background-image: url(./image/PENN-1.jpg);
     background-size: 250%;
     background-repeat: no-repeat;
@@ -232,74 +228,55 @@ h1{
     left: 80%;
     bottom: 51px;
 }
-
-.section-1{
-    display: block;
-}
 .section-1 h1{
     margin-bottom: 20px;
+}
+.container-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    max-width: 100%;
+    padding: 2px;
+    background: rgb(211, 211, 211);
+    margin: 10px;
+    border-radius: 20px;
 }
 .row:hover{
     transform: translateY(-20px);
     transition: all 1s 0s;
 }
-.container-3, .container-4{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.row-image img{
+    height: 30vh;
+    border-radius: 20px;
 }
-.container-3 h2, .container-4 h2{
+.service{
+    background: #ffffff;
+    color: black;
+    padding: 20px 20px 35px 20px;
+    margin: 0 10px 0 10px;
+    position: relative;
+    top: -20px;
+    border-radius: 20px;
+}
+.container-3 h2{
     font-size: 20px;
     font-weight: bolder;
-    padding: 20px 0 0 20px;
+    padding: 0 0 0 20px;
 }
-.container-3 p, .container-4 p{
-    padding: 20px 0 0 0;
-    /* text-align: center; */
-    margin: 0 20px;
-}
-.container-3 div, .container-4 div{
-    flex: auto;
-    border: 1px solid white;
-    border-radius: 30px;
-    margin: 20px 10px;
-    background: rgb(211, 211, 211);
-    color: black;
-}
-.row{
-    /* min-height: 30px; */
-    height: 400px;
-    min-width: 50px;
-}
-.container-3 img, .container-4 img{
-    max-width: 100%;
-    min-height: 50%;
-    object-fit: fill;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-}
-.container-3 .service, .container-4 .service{
-    background: #ffffff;
-    position: relative;
-    top: -60px;
-    height: 55%;
+.container-3 p{
+    padding: 10px ;
+    text-align: center;
 }
 .container-3 button, .container-4 button{
     background: var(--buttonColor);
     color: white;
-    border: var(--secondaryColor);
-    min-width: 80px;
-    min-height: 23px;
-    border-radius: 50px;
-    margin: 10px 0;
-    margin-right: 10px;
+    height: 1.3rem;
+    width: 4rem;
+    border-radius: 10px;
     float: right;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-weight: bolder;
+    border: var(--secondaryColor);
     box-shadow: 1px 2px 5px var(--buttonColor);
 }
 .section-2{
