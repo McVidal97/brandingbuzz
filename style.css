@@ -24,7 +24,7 @@ body{
 
 .logo{
     background: var(--primarColor);
-    min-width: 200px;
+    width: 200px;
     max-height: 4em;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -46,8 +46,8 @@ body{
     background: var(--primarColor);
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    float: right;
-    margin-left: 700px;
+    /* float: right; */
+    margin-left: 200%;
     /* width: 30vw;
     height: 7vh; */
     transition: all 2s 2s;
@@ -274,7 +274,7 @@ h1{
 }
 .container-3 img, .container-4 img{
     max-width: 100%;
-    min-height: 200px;
+    min-height: 50%;
     object-fit: fill;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -285,7 +285,7 @@ h1{
     background: #ffffff;
     position: relative;
     top: -60px;
-    min-height: 55%;
+    height: 55%;
 }
 .container-3 button, .container-4 button{
     background: var(--buttonColor);
@@ -409,7 +409,7 @@ footer ul{
     list-style-type: none;
 }
 footer li{
-    line-height: 9px;
+    line-height: 5%;
 }
 footer li a{
     color: #ffffff;
@@ -426,7 +426,7 @@ footer li a{
 }
 #subscribe{
     position: relative;
-    top: -15px;
+    top: 0.4rem;
     /* margin-left: 10px; */
 }
 .special1{
