@@ -14,13 +14,13 @@ body{
     background-repeat: no-repeat;
     color: white;
     font-family:'Poppins', sans-serif;
-    overflow-x: hidden;
 }
 .header_image{
     background-image: url(./image/brand_buzz_digital_hero@2x.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 100vh;
 }
 .main-header{
     display: flex;
@@ -82,12 +82,28 @@ body{
     transition: all 2s ease;
 }
 .text{
-    display: block;
-    padding: 200px 0 20px 65%;
+    /* display: block; */
+    /* padding: 17rem 0 2rem 55rem; */
+    animation: text;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes text {
+    0%{
+        padding: 0 0 0 0; 
+        opacity: 0;
+    }
+    100%{
+        padding: 17rem 0 2rem 55rem;
+        opacity: 1;
+    }
 }
 .text p{
     line-height: 1.5em;
     font-size: 28px;
+
 }
 .text strong{
     font-size: 50px;
@@ -103,6 +119,18 @@ body{
     border-radius: 50px;
     border: var(--buttonColor);
     box-shadow: 1px 1px 5px var(--secondaryColor);
+    opacity: 0;
+    animation: btn;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+@keyframes btn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .container-1{
     display: flex;
@@ -147,14 +175,15 @@ body{
     justify-items: center;
 }
 .container-1 #push{
-    padding-left: 8rem;
-    /* margin-left: 200px; */
+    /* padding-left: 8rem; */
+    margin-left: 9rem;
     color: var(--secondaryColor);
     font-size: 1.5rem;
     font-weight: bolder;
     font-style: italic;
 }
 .container-1 .border-line{
+    width: 100%;
     border-left: 1px solid rgb(175, 172, 172);
 }
 #brand{
@@ -183,7 +212,7 @@ body{
 }
 
 article{
-    margin: 3rem 8rem ;
+    margin: 3rem 10rem ;
 }
 .section{
     margin:0 5%;
@@ -227,9 +256,30 @@ h1{
     border: 1px solid var(--secondaryColor);
     border-radius: 50%;
     position: relative;
-    right: 30px;
-    top: 65px;
+    right: 3rem;
+    top: 5rem;
     /* bottom: -20px; */
+    animation: girl infinite;
+    animation-duration: 4s;
+animation-timing-function: infinite;
+}
+@keyframes girl {
+    0%{
+        top: 5rem;
+        left: -3rem;
+    }
+    25%{
+        left: 10rem;
+    }
+    50%{
+        top: 5rem;
+        left: -3rem;
+        bottom: -5rem;
+    }
+    100%{
+        top: 5rem;
+        left: -3rem;
+    }
 }
 #penn1{
     background-image: url(./image/PENN-1.jpg);
@@ -275,7 +325,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow:auto;
+    /* overflow:auto; */
 }
 .row{
     max-width: 100%;
@@ -292,11 +342,13 @@ h1{
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .row-image img{
     width: 100%;
-    /* height: 100%; */
+    height: 11rem; 
+    border-radius: 20px;
+    overflow: hidden;
 }
 .service{
     background: #ffffff;
