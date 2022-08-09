@@ -225,8 +225,8 @@ h1{
 }
 .container-2{
     background: silver;
-    padding: 4% 5%;
-    border-radius: 60px;
+    padding: 2.5rem 3rem;
+    border-radius: 5rem;
 }
 .container-2 #paragraph{
     background: white;
