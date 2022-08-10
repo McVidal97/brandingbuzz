@@ -189,9 +189,9 @@ body{
     justify-items: center;
 }
 .container-1 #push{
-    text-align: center;
+    /* text-align: center; */
     margin-left: 8vw;
-    padding-top: 11vh;
+    padding-top: 3.8rem;
     padding-right: 1vw;
     color: var(--secondaryColor);
     font-size: 1.5rem;
@@ -212,9 +212,7 @@ body{
     line-height: 1rem;
     /* font-weight: bold;*/
 }
-.container-1 #pull{
-    padding-right: 90px;
-} 
+
 .container-1 strong{
     font-size: 20px;
 }
@@ -244,6 +242,7 @@ h1{
     background: silver;
     padding: 2.5rem 3rem;
     border-radius: 5rem;
+    max-height: 100rem;
 }
 .container-2 #paragraph{
     background: white;
@@ -308,7 +307,7 @@ animation-timing-function: infinite;
     border: 1px solid var(--secondaryColor);
     border-radius: 50%;
     position: relative;
-    left: 40rem;
+    left: 60%;
     top: 2.5rem;
 }
 #penn{
@@ -321,7 +320,7 @@ animation-timing-function: infinite;
     border: 1px solid var(--secondaryColor);
     border-radius: 50%;
     position: relative;
-    left: 6rem;
+    left: 10%;
     bottom: 2.5rem;
 }
 #penn-alain{
@@ -331,8 +330,8 @@ animation-timing-function: infinite;
     border: 1px solid var(--secondaryColor);
     border-radius: 50%;
     position: relative;
-    left: 46rem;
-    bottom: 3rem;
+    left: 80%;
+    bottom: 4rem;
 }
 .section-1 h1{
     margin-bottom: 20px;
