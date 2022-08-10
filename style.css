@@ -96,7 +96,7 @@ body{
 .text p{
     position: relative;
     line-height: 1.5em;
-    font-size: 2rem;
+    font-size: 200%;
     animation: text;
     animation-duration: 5s;
     animation-timing-function: linear;
@@ -242,7 +242,6 @@ h1{
     background: silver;
     padding: 2.5rem 3rem;
     border-radius: 5rem;
-    max-height: 100rem;
 }
 .container-2 #paragraph{
     background: white;
@@ -277,7 +276,7 @@ h1{
     /* bottom: -20px; */
     animation: girl infinite;
     animation-duration: 4s;
-animation-timing-function: infinite;
+    animation-timing-function: linear;
 }
 @keyframes girl {
     0%{
@@ -331,7 +330,7 @@ animation-timing-function: infinite;
     border-radius: 50%;
     position: relative;
     left: 80%;
-    bottom: 4rem;
+    bottom: 60px;
 }
 .section-1 h1{
     margin-bottom: 20px;
