@@ -84,35 +84,30 @@ body{
 .text{
     /* display: block; */
     /* padding: 17rem 0 2rem 55rem; */
-    /* animation: text;
+    animation: text;
     animation-duration: 5s;
     animation-timing-function: linear;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards; 
     display: inline-block;
     position: relative;
     /* top: 50vh;
     left: 65vw; */
 }
 .text p{
-    position: relative;
     line-height: 1.5em;
     font-size: 200%;
-    animation: text;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
 }
 @keyframes text {
     0%{
-        top: 50vh;
+        top: 50%;
         left: 0;
     }
     50%{
         right: 1000px;
     }
     100%{
-        top: 50vh;
-        left: 65vw;
+        top: 50%;
+        left: 65%;
     }
 }
 .text strong{
@@ -135,8 +130,6 @@ body{
     animation-delay: 6s;
     animation-fill-mode: forwards;
     position: relative;
-    top: 50vh;
-    left: 65vw;
 }
 @keyframes btn {
     0%{
@@ -161,11 +154,11 @@ body{
     width: 50px;
 }
 @keyframes scroll {
-    0%{
+    0%{ 
         transform: translateX(300px);
     }
     50%{
-        transform: translateX(-300px);
+        transform: translateX(0);
         
     }
     100%{
@@ -173,7 +166,7 @@ body{
     }
 }
 .animation-container{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     margin-right: 8vw;
 }
 .animation{
@@ -227,7 +220,7 @@ body{
 
 article{
     /* margin: 3rem 10rem; */
-    margin: 3rem 10vw;
+    margin: 3rem 12vw;
 }
 .section{
     margin:0 5%;
