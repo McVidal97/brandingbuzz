@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primarColor:#022657;
+    --secondaryColor:#f2aa55;
+    --buttonColor: linear-gradient(#f7a644, #ac7532);
+}
+body{
+    background-color: #0b146d;
+    color: white;
+    font-family:'Poppins', sans-serif;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    min-width: 100vw;
+    width: 100%;
+    height: 60px;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    transition: all 2s linear;
+    /* background: var(--primarColor); */
+}
+.logo{
+    background: var(--primarColor);
+    width: 20%;
+    height: 100%;
+    float: left;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 2s 2s;
+}
+.logo img{
+    max-height: 80%;
+    float: right;
+    position: relative;
+    top: 4%;
+    right: 4%;
+    transition: all 2s 2s;
+
+}
+.navbar {
+    background: var(--primarColor);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 100%;
+    transition: all 2s 2s;
+}
+    
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 12rem 0 1rem;
+    display:flex;
+    align-items: center;
+    height: 100%;
+    transition: all 2s linear;
+}
+
+.navbar li a {
+    color: var(--secondaryColor);
+    text-align: center;
+    padding: 1.4rem 16px;
+    text-decoration: none;
+    transition: all 2s ease;
+}
+
+/* Who we are */
+article{
+    /* margin: 3rem 10rem; */
+    margin: 3rem 12vw;
+}
+.section{
+    margin:0 5%;
+}
+h1{
+    font-size: 300%;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--secondaryColor);
+}
+.container-2{
+    background: silver;
+    padding: 2.5rem 3rem;
+    border-radius: 5rem;
+}
+.container-2 #paragraph{
+    background: white;
+    color: black;
+    padding: 3%;
+    border-radius: 60px;
+    overflow: hidden;
+}
+#paragraph p{
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 90%;
+}
+
+.image{
+    display: flex;
+    flex-wrap: wrap;
+}
+#girl{
+    background-image: url(./image/1651736556515.jpg);
+    /* background-position: inherit; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100px;
+    min-width: 100px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 50%;
+    position: relative;
+    right: 3rem;
+    top: 5rem;
+    /* bottom: -20px; */
+    animation: girl infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+@keyframes girl {
+    0%{
+        top: 5rem;
+        left: -3rem;
+    }
+    25%{
+        left: 10rem;
+    }
+    50%{
+        top: 5rem;
+        left: -3rem;
+        bottom: -5rem;
+    }
+    100%{
+        top: 5rem;
+        left: -3rem;
+    }
+}
+#penn1{
+    background-image: url(./image/PENN-1.jpg);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 70% 6%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 50%;
+    position: relative;
+    left: 60%;
+    top: 2.5rem;
+}
+#penn{
+    background-image: url(./image/peen\ and\ alain.jpg);
+    background-repeat: no-repeat;
+    background-position: 80% 40%;
+    background-size: 300%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 50%;
+    position: relative;
+    left: 10%;
+    bottom: 2.5rem;
+}
+#penn-alain{
+    background: url(./image/peen\ and\ alain.jpg) center/cover no-repeat;
+    height: 100px;
+    width: 100px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 50%;
+    position: relative;
+    left: 80%;
+    bottom: 60px;
+}
+.mission_head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mission_head .main_mission{
+    flex: 40%;
+}
+.main_mission{
+    margin: 10px;
+} 
+.mission{
+    background-color: #e3e3e3;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.textMission{
+    background-color: #e3e3e3;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Team Members */
+.section2{
+    margin: 40px 0;
+}
+.section2 h1{
+    margin-bottom: 30px;
+}
+.team{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team .sub_team{
+    flex: 40%;
+} 
+.main_team{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main_team .flex_team{
+    flex: 25%;
+}
+.team_img{
+    background-image: url(./image/PENN-1.jpg);
+    background-size: 250%;
+    background-repeat: no-repeat;
+    background-position: 70% 6%;
+    height: 180px;
+    width: 180px;
+    border: 1px solid white;
+    border-radius: 90px;
+    /* float: right; */
+    position: relative;
+    left: 15%;
+}
+
+/* .team_head{
+    margin: 0 10px;
+} */
+.team_head{
+    position: relative;
+    top: 1.5rem;
+}
+.team_name{
+    background-color: #e3e3e3;
+    color: black;
+    text-align: center;
+    padding: 30px 0;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.team_text{
+    background-color: #e3e3e3;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    background: var(--primarColor);
+    margin-top: 8rem;
+    padding: 2rem 10rem;
+}
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.basic-footer{
+    flex: 5%;
+    /* justify-content: space-between; */
+    /* margin-left: 2rem; */
+}
+.main-footer ul{
+    list-style-type: none;
+    padding-top: 1rem;
+}
+.main-footer li{
+    font-size: small;
+    line-height: 1.4rem;
+}
+.main-footer h3{
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+}
+.main-footer #special p{
+    margin-top: 1rem;
+    font-size: small;
+    line-height: 1.4em;
+}
+
+.main-footer input{
+    height: 2.5rem;
+    width: 10rem;
+    margin-top: 0.5rem;
+    background:var(--primarColor);
+    font-size: 0.8rem;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    /* color: #ffffff; */
+}
+.main-footer button{
+    width:8rem;
+    height: 2.5rem;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    border-radius: 10px;
+}
+.copy{
+    position: relative;
+    top: 8rem;
+    left: 3rem;
+    font-size: small;
+}
