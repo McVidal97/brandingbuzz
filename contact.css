@@ -11,6 +11,10 @@
 body{
     /* background-color: #0b146d; */
     background-image: url(./image/map.png);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
     font-family:'Poppins', sans-serif;
 }
@@ -72,4 +76,105 @@ body{
     padding: 1.4rem 16px;
     text-decoration: none;
     transition: all 2s ease;
+}
+section{
+    padding: 20px 8vw 20px 30vw; 
+}
+.contact{
+    background-color: #022b6d;
+    text-align: center;
+    padding: 4rem 8rem;
+    border-radius: 50%;
+}
+.contact h1{
+    color: var(--secondaryColor);
+    font-size:40px;
+    margin: 50px 0;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form input{
+    margin: 10px 0;
+    height: 2rem;
+    width: 16rem;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 15px;
+}
+textarea{
+    margin: 10px 0;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 15px;
+}
+.ratio{
+    /* display: flex; */
+    font-size: 12px;
+    margin: 20px 0;
+}
+.btn button{
+    background: #cf954f;
+    color: white;
+    height: 2rem;
+    width: 7rem;
+    border: 1px solid #cf954f;
+    border-radius: 20px;
+}
+footer{
+    background: var(--primarColor);
+    margin-top: 0;
+    padding: 2rem 10rem;
+}
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.basic-footer{
+    flex: 5%;
+    /* justify-content: space-between; */
+    /* margin-left: 2rem; */
+}
+.main-footer ul{
+    list-style-type: none;
+    padding-top: 1rem;
+}
+.main-footer li{
+    font-size: small;
+    line-height: 1.4rem;
+}
+.main-footer h3{
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+}
+.main-footer #special p{
+    margin-top: 1rem;
+    font-size: small;
+    line-height: 1.4em;
+}
+
+.main-footer input{
+    height: 2.5rem;
+    width: 10rem;
+    margin-top: 0.5rem;
+    background:var(--primarColor);
+    font-size: 0.8rem;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    /* color: #ffffff; */
+}
+.main-footer button{
+    width:8rem;
+    height: 2.5rem;
+    font-weight: bolder;
+    font-size: 0.7rem;
+    border-radius: 10px;
+}
+.copy{
+    position: relative;
+    top: 8rem;
+    left: 3rem;
+    font-size: small;
 }
